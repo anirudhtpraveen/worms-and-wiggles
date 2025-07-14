@@ -11,12 +11,44 @@ button {
   cursor: pointer;
 }
 
-#state {
-  text-align: left;
-  display: inline-block;
-  background: #fff;
-  padding: 10px;
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 2px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #ccc;
-  max-width: 400px;
-  overflow-x: auto;
+  position: relative;
+  background-color: white;
+}
+
+.snake {
+  background-color: #fca5a5; /* red */
+}
+
+.ladder {
+  background-color: #86efac; /* green */
+}
+
+.yellow-odor {
+  background-color: #fde68a; /* yellow */
+}
+
+.green-odor {
+  background-color: #bbf7d0; /* light green */
+}
+
+.mite {
+  background-color: black;
+  color: white;
 }
